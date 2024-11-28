@@ -40,3 +40,40 @@ eksctl version
 ```shell
 aws configure
 ```
+
+# Infrastructure Sans Module
+
+Structure des fichiers :
+/eks-cluster
+  ├── main.tf
+  ├── variables.tf
+  ├── outputs.tf
+  ├── provider.tf
+  └── backend.tf (optionnel)
+
+# Exécuter Terraform
+
+Initialiser le projet Terraform :
+```shell
+terraform init
+```
+
+Valider le code Terraform :
+```shell
+terraform validate
+```
+
+Créer un plan d’exécution :
+```shell
+terraform plan
+```
+
+Appliquer le plan d’exécution :
+```shell
+terraform apply
+```
+
+Détruire les ressources :
+```shell
+terraform destroy
+```
