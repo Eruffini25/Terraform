@@ -73,7 +73,7 @@ resource "aws_instance" "example" {
   ami           = data.aws_ami.amazon_linux.id
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.public[0].id
-  security_groups = [aws_security_group.eks_sg.name]
+  vpc_security_group_ids = [aws_security_group.eks_sg.id]
 
   tags = {
     Name = "eks-instance"
