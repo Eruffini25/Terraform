@@ -44,12 +44,14 @@ aws configure
 # Infrastructure Sans Module
 
 Structure des fichiers :
+```shell
 /eks-cluster
   ├── main.tf
   ├── variables.tf
   ├── outputs.tf
   ├── provider.tf
   └── backend.tf (optionnel)
+```
 
 # Exécuter Terraform
 
