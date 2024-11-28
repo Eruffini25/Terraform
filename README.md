@@ -22,3 +22,21 @@ Verification de l'installation de AWS CLI
 aws --version
 ```
 
+## Install eksctl
+```shell
+curl -sL "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_Linux_amd64.tar.gz" -o eksctl.tar.gz
+tar -xzf eksctl.tar.gz
+sudo mv eksctl /usr/local/bin
+chmod +x /usr/local/bin/eksctl
+```
+Verification de l'installation eksctl
+```shell
+eksctl version
+```
+
+# Configure 
+
+## Configure AWS CLI
+```shell
+aws configure
+```
