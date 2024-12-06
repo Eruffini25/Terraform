@@ -49,8 +49,7 @@ Structure des fichiers :
   ├── main.tf
   ├── variables.tf
   ├── outputs.tf
-  ├── provider.tf
-  └── backend.tf (optionnel)
+  └── provider.tf
 ```
 
 # Exécuter Terraform
